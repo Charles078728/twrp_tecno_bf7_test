@@ -20,6 +20,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vendor \
     vendor_boot 
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -27,7 +28,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
 
 #
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
