@@ -1,0 +1,7 @@
+#
+
+LOCAL_PATH := device/tecno/BF7
+
+#
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
