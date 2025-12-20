@@ -123,6 +123,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/as
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so
 
 RECOVERY_SDCARD_ON_DATA := true
+PRODUCT_COPY_FILES += device/tecno/BF7/recovery/root/system/etc/recovery.fstab:recovery/root/system/etc/recvoery.fstab
 
 #Storage
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"
