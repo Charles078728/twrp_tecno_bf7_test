@@ -4,13 +4,9 @@
 
 # Dynamic partition
 
-/system		    ext4	/dev/block/mapper/system      flags=backup=1;display="System ext4";logical
-/vendor             ext4        /dev/block/mapper/vendor      flags=backup=1;display="Vendor ext4";logical
-/product            ext4        /dev/block/mapper/product     flags=backup=1;display="Product ext4";logical
-
-/system_image       emmc      /dev/block/mapper/system        flags=display="System image";backup=1;flashimg=1;logical
-/vendor_image       emmc      /dev/block/mapper/vendor        flags=display="Vendor image";backup=1;flashimg=1;logical
-/product_image      emmc      /dev/block/mapper/product       flags=display="Product image";backup=1;flashimg=1;logical
+/system		    ext4	/dev/block/mapper/system_a      flags=backup=1;display="System Image";backup=1;flashimg=1;logical
+/vendor             ext4        /dev/block/mapper/vendor_a     flags=backup=1;display="Vendor Image";backup=1;flashimg=1;logical
+/product            ext4        /dev/block/mapper/product_a     flags=backup=1;display="Product Image";backup=1;flashimg=1;logical
 
 # Core Partitions
 /metadata             ext4    /dev/block/by-name/md_udc         flags=backup=1;display="metadata"
