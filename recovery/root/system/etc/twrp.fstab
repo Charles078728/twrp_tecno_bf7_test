@@ -60,16 +60,10 @@
 /scp1		    emmc	/dev/block/by-name/scp1             flags=display="scp1";backup=1
 /scp2		    emmc	/dev/block/by-name/scp2             flags=backup=1;subpartitionof=/scp1         
 
-#Mod lopestom about encrypt_decrypt data
-/oemkeystore		emmc	/dev/block/by-name/oemkeystore
-/keystore		emmc	/dev/block/by-name/keystore
-
 # Other partitions
 /spmfw		    emmc	/dev/block/by-name/spmfw            flags=display="Spm";backup=1
 /sspm_1		    emmc	/dev/block/by-name/sspm_1           flags=display="sspm_1";backup=1
 /sspm_2		    emmc	/dev/block/by-name/sspm_2           flags=backup=1;subpartitionof=/sspm_1
-/efuse     emmc     /dev/block/by-name/efuse                        flags=backup=1
 
 # External-Devices (SDCARD | OTG)
 /external_sd    auto     /dev/block/mmcblk1p1  /dev/block/mmcblk1            flags=display="External_SDcard";storage;wipeingui;removable;fsflags="utf8",encryptable=userdata
-/usbotg        auto     /dev/block/sda1  /dev/block/sda                     flags=display="Usb_Otg";storage;wipeingui;removable;fsflags="utf8"
